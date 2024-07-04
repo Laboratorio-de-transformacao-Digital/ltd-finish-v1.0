@@ -1,0 +1,130 @@
+
+html {
+  background-image: url('../img/image 72.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100%; 
+}
+
+body {
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.chat-box:hover {
+  transform: scale(1.02); 
+  justify-content: center;
+  align-items: center;
+}
+
+.messages {
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+}
+
+.message {
+  margin: 10px;
+  text-align: end;
+  color: #FFFFFF; 
+}
+
+.bot-message {
+  color: #1D9CFE; 
+  text-align: left;
+  max-width: 30ch;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 0;
+  
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d4d4d4;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF; 
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #1D9CFE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF; 
+  margin-left: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+.send-button:hover {
+  background-color: #1466C3; 
+}
+
+.download-button-container {
+  margin-top: 20px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #1D9CFE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF; 
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1466C3; 
+}
+
+.typing-indicator .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  animation: typing 1s infinite ease-in-out;
+}
+
+@keyframes typing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}

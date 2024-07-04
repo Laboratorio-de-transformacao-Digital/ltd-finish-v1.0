@@ -1,0 +1,202 @@
+.active-press {
+  background-color: #136bcfbd; 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../img/image 72.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.navbar {
+  background-color: #014BA0;
+  width: 100%;
+  height: 60px;
+  opacity: 0.9;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-item {
+  padding: 3px 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #136bcfbd;
+}
+
+.content {
+  flex: 1;
+  padding: 5px;
+}
+
+.creditos-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.ltd-description,
+.team-members {
+  margin-bottom: 30px;
+}
+
+.ltd-description h3,
+.team-members h3 {
+  color: #136bcfbd;
+  margin-bottom: 15px;
+}
+
+.ltd-description p,
+.team-members p {
+  line-height: 1.6;
+  color: white;
+}
+
+.team-member {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #136bcfbd;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.team-member:hover {
+  transform: scale(1.05); 
+}
+
+.team-member h4 {
+  margin: 0 0 10px;
+  color: #136bcfbd;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.team-member-info {
+  display: flex;
+  align-items: center;
+}
+
+.team-member p {
+  margin: 5px 0;
+}
+
+.team-member .role {
+  font-weight: bold;
+}
+
+.team-member .description {
+  margin-top: 10px;
+}
+
+.team-member a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.team-member a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.team-member a img:hover {
+  transform: scale(1.2);
+}
+
+.team-member a span {
+  color: white;
+}
+
+.acknowledgements {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #136bcfbd;
+  border-radius: 10px;
+}
+
+.acknowledgements h3 {
+  color: #136bcfbd;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.acknowledgements p {
+  color: white;
+  line-height: 1.6;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .creditos-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member img {
+    margin-bottom: 10px;
+  }
+
+  .team-member-info {
+    flex-direction: column;
+  }
+
+  .team-member a img {
+    margin-right: 0;
+  }
+}
